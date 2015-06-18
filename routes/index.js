@@ -19,7 +19,7 @@ router.get('*', function(req, res, next)
     else
     {
       console.log('> Rendering: ' + req.path);
-      res.render(node.Template, {currentPage: node.Content});
+      res.render(node.Template, {currentPage: node.Content, Model: node});
     }
   });
 });
